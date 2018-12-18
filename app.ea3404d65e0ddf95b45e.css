@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  overflow: hidden; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+#header {
+  background-color: #303030;
+  width: 100vw;
+  height: 96px;
+  display: flex; }
+  #header #logo, #header #navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px; }
+  #header #navigation {
+    width: 100%;
+    color: white;
+    font-size: 32px; }
+    #header #navigation * {
+      padding: 8px;
+      margin: 8px;
+      border: solid white 1px; }
+
+.task {
+  height: calc(50vh - 48px); }
+  .task .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    font-size: 32px;
+    border-bottom: solid #606060 1px; }
+  .task .content {
+    height: calc(100% - 64px);
+    display: flex;
+    justify-content: space-around; }
+    .task .content > * {
+      width: 50%; }
+    .task .content .out {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; }
+  .task .in {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+#first-task .in input {
+  width: 256px;
+  margin-bottom: 16px; }
+
+#first-task .in button {
+  width: auto; }
+
+#first-task .out {
+  overflow-y: scroll;
+  padding: 8px; }
+  #first-task .out > div {
+    height: 39px;
+    padding: 8px;
+    text-align: center;
+    border: solid 1px #606060;
+    display: flex;
+    align-items: center; }
+    #first-task .out > div > div {
+      width: 100%;
+      text-align: center; }
+
+#second-task .content .in > * {
+  margin: 16px; }
+
+#second-task .content .out {
+  width: 100;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*# sourceMappingURL=app.js.map*/
